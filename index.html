@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Saviez-Tu ? | Site Officiel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #a855f7;
+            --bg: #0f172a;
+            --text: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Arrière-plan décoratif */
+        .blob {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.tagline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-outline {
+            border: 1px solid #334155;
+            color: white;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            background: #020617;
+        }
+
+        .legal-links {
+            margin-top: 20px;
+        }
+
+        .legal-links a {
+            color: #64748b;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .legal-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blob" style="top: -100px; left: -100px;"></div>
+    <div class="blob" style="bottom: 10%; right: -100px; background: var(--secondary);"></div>
+
+    <header>
+        <h1>Le Saviez-Tu ?</h1>
+        <p class="tagline">Explorez chaque jour des anecdotes fascinantes, des faits insolites et enrichissez votre culture générale en un clin d'œil.</p>
+        <div class="cta-buttons">
+            <a href="#about" class="btn btn-primary">En savoir plus</a>
+            <a href="mailto:ton-email@gmail.com" class="btn btn-outline">Contact</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 50px;">Pourquoi choisir notre plateforme ?</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Contenu Vérifié</h3>
+                <p>Toutes nos anecdotes sont sourcées et vérifiées par notre équipe pour garantir une information de qualité.</p>
+            </div>
+            <div class="card">
+                <h3>Apprentissage Quotidien</h3>
+                <p>Recevez chaque jour une notification pour apprendre quelque chose de nouveau en moins de 30 secondes.</p>
+            </div>
+            <div class="card">
+                <h3>Partage Facile</h3>
+                <p>Brillez en société en partageant nos contenus directement sur vos réseaux sociaux préférés.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Le Saviez-Tu ? - Tous droits réservés.</p>
+        <div class="legal-links">
+            <a href="privacy.html">Politique de Confidentialité</a>
+            <a href="terms.html">Conditions Générales</a>
+            <a href="https://pareyl.github.io/le-saviez-tu-legal/tiktokd9s5co0vnynOittIqiqNBjWg3ZBkD6UH.txt" target="_blank">Vérification TikTok</a>
+        </div>
+    </footer>
+
+</body>
+</html>
